@@ -4,14 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 .mainPage{
-    padding: 2rem 4rem;
     background-color: #222831;
     background-image: url("../images/coffee_first.png");
     background-repeat: no-repeat;
-    background-size: 668px;
-    background-position: left 700px top 97px;
+    background-size: 725px;
+    background-position: left 635px top 130px;
+}
+.mainInner{
+    padding: 2rem 4rem 0 4rem;
 }
 .navbar{
     display: flex;
@@ -35,15 +38,13 @@
     height: 2.5rem;
     cursor: pointer;
 }
-.hero{
-}
 
 .heading{
     font-family: "Grand Hotel", cursive;
 }
 .coffeeTime{
-    width: 50%;
-    padding: 3rem 0;
+    width: 60%;
+    padding: 2rem 0;
 }
 .coffeeTimeMain{
     font-size: 10rem;
@@ -72,4 +73,53 @@
     border: none;
     background: #29a19c;
     color: white;
+}
+.mainPageWave{
+    width: 100%;
+}
+.mainPageWave img{
+    width: 100%;
+}
+.blackCoffees{
+    margin-top: -4px;
+    background: #29a19c;
+}
+.blackCoffeesContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.blackLeft{
+    padding: 6rem 0;
+}
+.blackRight{
+    width: 50%;
+}
+
+.blackHeading{
+    width: 35%;
+    font-size: 8rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 7rem;
+}
+.btnDark{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #222831;
+    color: white;
+    margin-top: 4rem;
+}
+
+.coffeeImage img{
+    height: 30rem;
+}
+.blackRightText{
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
