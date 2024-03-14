@@ -451,6 +451,10 @@ button:hover{
         width: 100%;
         padding-top: 0;
     }
+    .coffeeTimeMain {
+        text-align: center;
+        font-size: 4rem;
+    }
     .coffeeTimeSub{
         font-size: 1.5rem;
         padding-top: 1rem;
@@ -476,6 +480,11 @@ button:hover{
         padding: 1rem 1rem;
         width: 100%;
         flex-direction: column;
+        align-items: center;
+    }
+    
+    .blackHeading{
+        font-size: 4rem;
     }
 
     .blackLeft{
@@ -485,10 +494,10 @@ button:hover{
         width: 100%;
     }
     .blackRightText{
-        text-align: left;
+        text-align: justify;
     }
     .btnDark{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         padding: 8px 10px;
         border-radius: 10px;
@@ -499,52 +508,121 @@ button:hover{
     .hotCoffees{
     }
     .hotCoffeesContent{
+        padding: 1rem 1rem;
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
-    .blackHeading{
+    .hotLeftText{
+        text-align: justify;
+    }
+    .hotRight{
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .hotRight .btnLight{
+        margin-top: 1rem;
+    }
+    .hotHeading{
         font-size: 4rem;
     }
+
     .hotLeft{
         width: 100%;
     }
     .whiteCoffeesContent{
+        padding: 1rem 1rem;
         width: 100%;
         flex-direction: column;
+       text-align: center;
+    }
+    .whiteLeft{
+        width: 100%;
+        padding: 0;
     }
     .whiteRight{
         width: 100%;
+        padding: 0;
     }
+    .whiteHeading{
+        font-size: 4rem;
+        width: 100%;
+    }
+    .whiteRightText{
+    text-align: justify;
+}
+.whiteRight .btnLight{
+    margin-top: 1rem;
+}
+.voucherHeading{
+    font-size: 4rem;
+}
     .voucherImage img{
         width: 100%;
     }
+    .voucherButton{
+        font-size: 1.5rem;
+        width: 70%;
+    }
     .customerReviewsContent{
         width: 100%;
+
+    }
+    .reviewHeading{
+        font-size: 4rem;
     }
     .reviews{
         flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .reviewLeft{
+        padding-bottom: 2rem;
+    }
+    .open{
+        margin-top: -8px;
+    }
+    .openHeading{
+        font-size: 4rem;
     }
     .branchesContent{
         width: 100%;
     }
+    .branchesHeading{
+        font-size: 4rem;
+    }
     .branchesMain{
         flex-direction: column;
+    }
+    .city{
+        padding-bottom: 2rem;
+    }
+    .cityMessage{
+        padding-top: 0;
+    }
+    .footer{
+        margin-top: -8px;
     }
     .footerContent{
         width: 100%;
         flex-direction: column;
     }
-    .footerNav{
-        display: none;
-    }
+  
     .footerRight{
         width: 100%;
+        padding-top: 1rem;
     }
     .footerRight li{
         font-size: 1rem;
     }
+    .social{
+        width: 100%;
+        justify-content: space-around;
+    }
+    
     .infoHeading, .contactHeading{
         font-size: 1rem;
+        padding-bottom: 0.5rem;
     }
     .reviewLeft, .reviewRight{
         width: 100%;
@@ -552,8 +630,6 @@ button:hover{
     .reviewImage img{
         width: 100%;
     }
-    .coffeeTimeMain{
-        font-size: 4rem;
-    }
+
 
 }
