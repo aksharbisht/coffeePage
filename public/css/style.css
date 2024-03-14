@@ -6,12 +6,15 @@
     font-family: "Montserrat", sans-serif;
     color: white;
 }
+.phone{
+    display: none;
+}
 .mainPage{
     background-color: #222831;
-    background-image: url("../images/coffee_first.png");
-    background-repeat: no-repeat;
-    background-size: 725px;
-    background-position: left 635px top 130px;
+    background-image: url("../images/coffee_first.png"), url("../images/right_cup.png"), url("../images/right_bean.png"), url("../images/left_jar.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 725px, 50px, 50px, 72px;
+    background-position: left 635px top 130px, left 808px top 137px, left 668px top 307px, left 470px top 499px;
 }
 .mainInner{
     padding: 2rem 4rem 0 4rem;
@@ -30,7 +33,7 @@
 .navLinks li{
     padding-right: 3rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -65,6 +68,12 @@
     padding-bottom: 1.5rem;
    
 }
+button{
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 3px 3px 5px rgb(51, 65, 70);
+}
 .btnLight{
     font-size: 1.8rem;
     font-weight: 700;
@@ -83,6 +92,10 @@
 .blackCoffees{
     margin-top: -4px;
     background: #29a19c;
+    background-image: url("../images/left_bean.png"), url("../images/right_bean.png"), url("../images/right_cup.png"), url("../images/left_jar.png"), url("../images/right_bean.png"), url("../images/left_bean.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 60px, 40px, 60px, 80px, 54px, 40px;
+    background-position: left 227px top 0px, left 565px top 79px, left 1168px top 5px, left 527px top 261px, left 1183px top 327px, left 192px top 497px;
 }
 .blackCoffeesContent{
     width: 80%;
@@ -97,13 +110,14 @@
     width: 50%;
 }
 
-.blackHeading{
-    width: 35%;
+.blackHeading, .hotHeading{
+    /* width: 35%; */
     font-size: 8rem;
     color: #ffffff;
     font-weight: 400;
     line-height: 7rem;
 }
+
 .btnDark{
     font-size: 1.5rem;
     font-weight: 700;
@@ -116,10 +130,430 @@
 }
 
 .coffeeImage img{
-    height: 30rem;
+    width: 100%;
 }
 .blackRightText{
     padding-top: 0.5rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    text-align: right;
+}
+.hotCoffees{
+    background: #222831;
+    background-image: url("../images/left_cup.png"), url("../images/right_bean.png"), url("../images/right_bean.png"), url("../images/right_jar.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 60px, 50px, 59px, 87px;
+    background-position: left 77px top 271px, left 714px top 290px, left 1254px top 555px, left 850px top 785px;
+}
+.secondWave{
+    width: 100%;
+}
+.secondWave img{
+    width: 100%;
+}
+.hotCoffeesContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hotLeft{
+    width: 50%;
+}
+.hotLeftText{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+.hotRight{
+    padding: 7rem 0;
+    width: 30%;
+    text-align: right;
+}
+
+.hotRight button{
+    margin-top: 8rem;
+}
+.whiteCoffees{
+    background: #222831;
+    padding-top: 4rem;
+    background-image: url("../images/left_bean.png"), url("../images/right_cup.png"), url("../images/left_bean.png"), url("../images/jar2.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 50px, 60px, 50px, 100px;
+    background-position: left 284px top 51px, left 1217px top 183px, left 584px top 311px, left 271px top 565px;
+}
+.whiteCoffeesContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.whiteHeading{
+    font-size: 8rem;
+    width: 35%;
+    font-weight: 400;
+    line-height: 7rem;
+}
+.blackLeft button{
+    margin-top: 4rem;
+}
+.whiteLeft{
+    padding: 6rem 0;
+}
+.whiteLeft button{
+    margin-top: 4rem;
+}
+.whiteRight{
+    width: 55%;
+    padding-left: 4rem;
+}
+.whiteRightText{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: right;
+}
+.voucher{
+    background: #222831;
+    padding-top: 2rem;
+    background-image: url("../images/left_bean.png"), url("../images/left_cup.png"), url("../images/right_jar.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 60px, 80px, 100px;
+    background-position: left 1144px top 136px, left 159px top 418px, left 1115px top 544px;
+}
+.voucherContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.voucherHeading{
+    font-size: 7rem;
+}
+.voucherImage img{
+    width: 800px;
+}
+.voucherButton{
+    background: #29a19c;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 15px
+}
+.customerReviews{
+    background: #222831;
+    background-image: url("../images/right_bean.png"), url("../images/jar2.png"), url("../images/cup2.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 60px, 105px, 78px;
+    background-position: left 655px top 249px, left 74px top 492px, left 1167px top 490px;
+}
+.customerReviewsContent{
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+}
+.reviewHeading{
+    text-align: center;
+    font-size: 5rem;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewLeft, .reviewRight{
+    width: 40%;
+}
+.reviewImage{
+    text-align: center;
+}
+.customerName{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.reviewText{
+    padding-top: 1rem;
+    text-align: center;
+    letter-spacing: 2%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.thirdWave{
+    width: 100%;
+}
+.thirdWave img{
+    width: 100%;
+}
+.open{
+    margin-top: -4px;
+    background-color: #29a19c;
+    background-image: url("../images/left_bean.png"), url("../images/right_jar.png"), url("../images/left_cup.png"), url("../images/right_bean.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 50px, 90px, 100px, 81px;
+    background-position: left 137px top 10px, left 1104px top 43px, left 265px top 203px, left 1047px top 268px;
+}
+.openContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.openHeading{
+    font-size: 5rem;
+}
+.monday{
+    padding: 2rem 0;
+}
+.day{
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.time{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.branches{
+    background-color: #222831;
+    background-image: url("../images/right_bean.png"), url("../images/left_bean.png"), url("../images/right_jar.png"), url("../images/left_cup.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 50px, 40px, 60px, 62px;
+    background-position: left 372px top 252px, left 1199px top 286px, left 439px top 877px, left 843px top 900px;
+}
+.fourthWave{
+    width: 100%;
+}
+.fourthWave img{
+    width: 100%;
+}
+.branchesContent{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+.branchesHeading{
+    font-size: 5rem;
+    text-align: center;
+}
+.branchesMain{
+    display: flex;
+    justify-content: space-between;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cityImage{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.cityName{
+    font-size: 2rem;
+    font-weight: 500;
+    background: #29a19c;
+    text-align: center;
+    padding: 0.4rem 0;
+    width: 250px;
+    border-radius: 15px;
+}
+.cityMessage{
+    width: 80%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding-top: 1rem;
+}
+.arrow{
+    height: 1.2rem;
+    width: 1rem;
+    background-color: #29a19c;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    right: 7rem;
+    bottom: 0.8rem;
+}
+.fifthWave{
+    width: 100%;
+}
+.fifthWave img{
+    width: 100%;
+}
+.footer{
+    margin-top: -4px;
+    background: #29a19c;
+}
+.footerContent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footerRight{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.infoHeading, .contactHeading{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+.footerRight li{
+    list-style: none;
+    padding: 0.35rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footerNav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.social{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+.social div{
+    cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px){
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    .hamburgerIcon img{
+        height: 2rem;
+    }
+    .mainPage{
+        background-size: 310px, 0, 0, 0;
+        background-position: left 53px top 250px;
+    }
+    .mainInner{
+        padding: 1rem 1rem;
+    }
+    .hero{
+        padding: 1rem 0;
+    }
+    .coffeeTime{
+        width: 100%;
+        padding-top: 0;
+    }
+    .coffeeTimeSub{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    .btnLight{
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: none;
+        background: #29a19c;
+        color: white;
+    }
+
+    .coffeeImage img{
+        width: 100%;
+    }
+    .blackCoffees{
+        margin-top: -8px;
+        background-image: none;
+    }
+    .blackCoffeesContent{
+        padding: 1rem 1rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blackLeft{
+        padding: 0;
+    }
+    .blackRight{
+        width: 100%;
+    }
+    .blackRightText{
+        text-align: left;
+    }
+    .btnDark{
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        margin-top: 1rem;
+    }
+    .hotCoffees{
+    }
+    .hotCoffeesContent{
+        width: 100%;
+        flex-direction: column;
+    }
+    .blackHeading{
+        font-size: 4rem;
+    }
+    .hotLeft{
+        width: 100%;
+    }
+    .whiteCoffeesContent{
+        width: 100%;
+        flex-direction: column;
+    }
+    .whiteRight{
+        width: 100%;
+    }
+    .voucherImage img{
+        width: 100%;
+    }
+    .customerReviewsContent{
+        width: 100%;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .branchesContent{
+        width: 100%;
+    }
+    .branchesMain{
+        flex-direction: column;
+    }
+    .footerContent{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footerNav{
+        display: none;
+    }
+    .footerRight{
+        width: 100%;
+    }
+    .footerRight li{
+        font-size: 1rem;
+    }
+    .infoHeading, .contactHeading{
+        font-size: 1rem;
+    }
+    .reviewLeft, .reviewRight{
+        width: 100%;
+    }
+    .reviewImage img{
+        width: 100%;
+    }
+    .coffeeTimeMain{
+        font-size: 4rem;
+    }
+
 }
