@@ -494,6 +494,7 @@ button:hover{
     }
     .coffeeTime p{
         width: 100%;
+        text-align: justify;
     }
     .coffeeTimeMain {
         text-align: center;
