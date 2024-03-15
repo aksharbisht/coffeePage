@@ -9,6 +9,11 @@
 .phone{
     display: none;
 }
+
+.backdrop
+{
+    display: none;
+}
 .mainPage{
     background-color: #222831;
     background-image: url("../images/coffee_first.png"), url("../images/right_cup.png"), url("../images/right_bean.png"), url("../images/left_jar.png");
@@ -40,6 +45,12 @@
 .navLogo img{
     height: 2.5rem;
     cursor: pointer;
+}
+.navPhone{
+    display: none;
+}
+.hamburgerIcon{
+    display: none;
 }
 
 .heading{
@@ -434,12 +445,35 @@ button:hover{
     .phone{
         display: block;
     }
+    .hamburgerIcon{
+        display: block;
+    }
     .hamburgerIcon img{
         height: 2rem;
     }
+    .navPhone{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -50%;
+        height: 100vh;
+        width: 50vw;
+        transition: all 0.5s linear;
+        background-color: black;
+        z-index: 2;
+    }
+    .navPhone li{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+    .backdrop{
+        position: absolute;        
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.6);
+    }
     .mainPage{
-        background-size: 310px, 0, 0, 0;
-        background-position: left 53px top 250px;
+        background-image: none;
     }
     .mainInner{
         padding: 1rem 1rem;
@@ -450,6 +484,16 @@ button:hover{
     .coffeeTime{
         width: 100%;
         padding-top: 0;
+    }
+    .coffeeTimeImage img{
+        padding-top: 1rem;
+        width: 100%;
+    }
+    .coffeeTimeText{
+        text-align: center;
+    }
+    .coffeeTime p{
+        width: 100%;
     }
     .coffeeTimeMain {
         text-align: center;
@@ -495,6 +539,10 @@ button:hover{
     }
     .blackRightText{
         text-align: justify;
+        padding-bottom: 1rem;
+    }
+    .blackRight button{
+        margin: auto;
     }
     .btnDark{
         font-size: 1rem;
@@ -520,9 +568,16 @@ button:hover{
         width: 100%;
         text-align: left;
         padding: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
     .hotRight .btnLight{
         margin-top: 1rem;
+
+    }
+    .hotRight button{
+
     }
     .hotHeading{
         font-size: 4rem;
@@ -551,9 +606,11 @@ button:hover{
     }
     .whiteRightText{
     text-align: justify;
+    padding-bottom: 1rem;
 }
 .whiteRight .btnLight{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    margin: auto;
 }
 .voucherHeading{
     font-size: 4rem;
@@ -579,6 +636,9 @@ button:hover{
     .reviewLeft{
         padding-bottom: 2rem;
     }
+    .reviewText{
+        text-align: justify;
+    }
     .open{
         margin-top: -8px;
     }
@@ -587,6 +647,7 @@ button:hover{
     }
     .branchesContent{
         width: 100%;
+        padding: 1rem 1rem;
     }
     .branchesHeading{
         font-size: 4rem;
@@ -597,13 +658,19 @@ button:hover{
     .city{
         padding-bottom: 2rem;
     }
+    .cityImage img{
+        width: 100%;
+    }
     .cityMessage{
+        width: 100%;
         padding-top: 0;
+        text-align: justify;
     }
     .footer{
         margin-top: -8px;
     }
     .footerContent{
+        padding: 1rem 1rem;
         width: 100%;
         flex-direction: column;
     }

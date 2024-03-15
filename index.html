@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
+    <div class="backdrop" onclick="hidebar()"></div>
+
     <div class="container">
         <div class="mainPage">
             <div class="mainInner">
             <div class="navbar">
+                    <div class="hamburgerIcon" onclick="showBar()">
+                        <img src="public/images/hamburger.png" alt="">
+                    </div>
                 <div class="navLinks pc">
                     <ul>
                         <li>Home</li>
@@ -21,21 +26,36 @@
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="phone">
-                    <div class="hamburgerIcon">
-                        <img src="public/images/hamburger.png" alt="">
-                    </div>
-                </div>
+
                 <div class="navLogo">
                     <img src="public/images/logo.png" alt="nav logo">
+                </div>
+            </div>
+            <div class="navPhone">
+                <div class="phoneLinks">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Menu</li>
+                        <li>Blog</li>
+                        <li>Shop</li>
+                        <li>Contact</li>
+                    </ul>
                 </div>
             </div>
             <div class="hero">
                 <div class="coffeeTime">
                     <div class="coffeeTimeMain heading">Coffee Time</div>
+                    <div class="coffeeTimeImage phone">
+                        <img src="public/images/BigImage.png" alt="">
+                    </div>
+                    <div class="coffeeTimeText">
                     <div class="coffeeTimeSub">YOUR HEADLINE</div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim, fugiat quasi nulla qui corrupti nihil voluptate quas unde?</p>
+                
                     <button class="btnLight">Order Now</button>
+                </div>
                 </div>
             </div>
            
@@ -235,5 +255,6 @@
         </div>
     </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
