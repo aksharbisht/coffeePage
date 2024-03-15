@@ -616,7 +616,8 @@ button:hover{
     font-size: 4rem;
 }
     .voucherImage img{
-        width: 100%;
+        /* width: 100%; */
+        width: 97%;
     }
     .voucherButton{
         font-size: 1.5rem;
